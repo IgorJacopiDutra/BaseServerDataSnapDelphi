@@ -1,0 +1,5 @@
+30/12/2023 20:39:46 - JSON: {} Message: [FireDAC][Phys][FB]Dynamic SQL Error
+SQL error code = -206
+Column unknown
+COD_USER
+At line 6, column 10

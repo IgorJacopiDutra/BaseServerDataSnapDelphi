@@ -1,0 +1,1 @@
+30/12/2023 19:55:18 - [FireDAC][Phys][ODBC][Microsoft][SQL Server Native Client 11.0]Palavra-chave DSN ou SERVER não fornecida

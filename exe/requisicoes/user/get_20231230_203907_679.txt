@@ -1,0 +1,5 @@
+30/12/2023 20:39:07 - JSON: {} Message: [FireDAC][Phys][FB]Dynamic SQL Error
+SQL error code = -204
+Table unknown
+USER
+At line 6, column 10

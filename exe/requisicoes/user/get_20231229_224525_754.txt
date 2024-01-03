@@ -1,0 +1,1 @@
+29/12/2023 22:45:25 - JSON: {} Message: [FireDAC][Phys][ODBC][Microsoft][SQL Server Native Client 11.0]Palavra-chave DSN ou SERVER não fornecida

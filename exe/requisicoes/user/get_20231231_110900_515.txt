@@ -1,0 +1,4 @@
+31/12/2023 11:09:00 - JSON: {} Message: [FireDAC][Phys][FB]Dynamic SQL Error
+SQL error code = -104
+Token unknown - line 4, column 6
+'Users'
