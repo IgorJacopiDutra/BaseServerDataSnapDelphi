@@ -1,0 +1,1 @@
+05/01/2024 16:25:26 - Cannot open file "C:\geiewin\SubProjetos\Curso\Git\BaseServerDataSnapDelphi\exe\ConfigDB.ini". O sistema não pode encontrar o arquivo especificado

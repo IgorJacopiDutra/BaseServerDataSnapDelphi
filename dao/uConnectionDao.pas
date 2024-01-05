@@ -23,6 +23,7 @@ type
       function getParam(str: string): string;
       function getValue(str: string): string;
       function getParamByArq(sParam, sDir, sArq, sExt: string; bCript: Boolean): string;
+      procedure ConnectDataBase;
    public
       constructor Create; overload;
       constructor Create(sTipo: string); overload;
@@ -50,6 +51,29 @@ uses
    System.Classes;
 
 { TConnectionDao }
+
+procedure TConnectionDao.ConnectDataBase;
+var
+   pathData: string;
+begin
+   pathData := ExtractFilePath(ParamStr(0));
+   pathData := StringReplace(pathData, 'exe\', '', [rfReplaceAll, rfIgnoreCase]);
+   pathData := IncludeTrailingPathDelimiter(pathData) + 'data\DATA.FDB';
+
+   with FConn do
+   begin
+      Close;
+
+      Params.Clear;
+
+      Params.Add('DriverID=FB');
+      Params.Add('Database=' + pathData);
+      Params.Add('User_Name=SYSDBA');
+      Params.Add('Password=masterkey');
+
+      Open;
+   end;
+end;
 
 function TConnectionDao.getParam(str: string): string;
 begin
@@ -93,20 +117,34 @@ end;
 
 function TConnectionDao.getParamByArq(sParam, sDir, sArq, sExt: string; bCript: Boolean): string;
 var
-   i: Integer;
-   config: TStringList;
+  i: Integer;
+  config: TStringList;
+  filePath: string;
 begin
-   config := TStringList.Create;
-   try
-      config.LoadFromFile(sDir + sArq + '.' + sExt);
-      for i := 0 to (config.Count - 1) do
+  Result := '';
+  config := TStringList.Create;
+  try
+    filePath := sDir + sArq + '.' + sExt;
+
+    if FileExists(filePath) then
+    begin
+      config.LoadFromFile(filePath);
+
+      if config.Count > 0 then
       begin
-         if (UpperCase(getParam(config.Strings[i])) = UpperCase(sParam)) then
-            getParamByArq := getValue(config.Strings[i]);
+        for i := 0 to (config.Count - 1) do
+        begin
+          if (UpperCase(getParam(config.Strings[i])) = UpperCase(sParam)) then
+          begin
+            Result := getValue(config.Strings[i]);
+            Exit;
+          end;
+        end;
       end;
-   finally
-      config.Free;
-   end;
+    end;
+  finally
+    config.Free;
+  end;
 end;
 
 procedure TConnectionDao.ConfigurarConnectionDao(sTipo: string);
@@ -115,8 +153,15 @@ begin
       FConn.Connected := false;
       FConn.Params.Clear;
 
-      FConn.Params.Text := getParamsConnectionByArq('', 'ConfigDB', 'ini');
-      FConn.DriverName := getParamByArq('DriverID', '', 'ConfigDB', 'ini', true);
+      if getParamByArq('DriverID', '', 'ConfigDB', 'ini', false) = '' then
+      begin
+         ConnectDataBase();
+      end
+      else
+      begin
+         FConn.Params.Text := getParamsConnectionByArq('', 'ConfigDB', 'ini');
+         FConn.DriverName := getParamByArq('DriverID', '', 'ConfigDB', 'ini', true);
+      end;
 
       FDPhysFBDriverLink1 := TFDPhysFBDriverLink.Create(nil);
 

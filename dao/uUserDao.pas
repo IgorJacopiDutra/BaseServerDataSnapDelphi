@@ -22,7 +22,7 @@ uses
    uConnectionDao, uTools;
 
 const
-   tableName = 'Users';
+   tableName = 'USERS';
 { TUserDao }
 
 function TUserDao.Update(AId: string; AModel: TUserModel): TJSONValue;
@@ -39,7 +39,7 @@ begin
          begin
             Close;
             SQL.Clear;
-            SQL.Add('UPDATE "' + tableName + '"');
+            SQL.Add('UPDATE ' + tableName);
             //SQL.Add('SET operador = :operador');
             //ParamByName('operador').AsString := 'SERVER';
             if isValidDateFormat(AModel.DataCadastro, 'yyyy-mm-dd') then
@@ -93,7 +93,7 @@ begin
          begin
             Close;
             SQL.Clear;
-            SQL.Add('DELETE FROM "' + tableName + '"');
+            SQL.Add('DELETE FROM ' + tableName);
             SQL.Add('WHERE id = :id');
             ParamByName('id').AsString := AId;
             try
@@ -154,7 +154,7 @@ begin
             begin
                Close;
                SQL.Clear;
-               SQL.Add('INSERT INTO "' + tableName + '"');
+               SQL.Add('INSERT INTO ' + tableName);
                SQL.Add('(id, "USER", dataCadastro)');
                SQL.Add('values');
                SQL.Add('(:id, :usera, :dataCadastro)');
@@ -226,7 +226,7 @@ begin
             end;
 
             SQL.Add('id, "USER", dataCadastro');
-            SQL.Add('FROM "' + tableName + '"');
+            SQL.Add('FROM ' + tableName );
 
             SQL.Add('WHERE 1 = 1');
 
