@@ -1,0 +1,8 @@
+create table Users
+(
+id integer,
+"USER" varchar(20),
+dataCadastro varchar(10)
+);
+
+CREATE SEQUENCE GEN_USERS;
