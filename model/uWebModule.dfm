@@ -116,4 +116,10 @@ object WebModule1: TWebModule1
     Left = 200
     Top = 59
   end
+  object DSSCCliente: TDSServerClass
+    OnGetClass = DSSCClienteGetClass
+    Server = DSServer1
+    Left = 272
+    Top = 75
+  end
 end

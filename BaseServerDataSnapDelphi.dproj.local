@@ -2,27 +2,27 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2023/12/29 13:51:00.000.038,=C:\geiewin\SubProjetos\Curso\Git\FormUnit1.pas</Transaction>
-    <Transaction>2023/12/29 13:51:01.000.463,=C:\geiewin\SubProjetos\Curso\Git\WebModuleUnit1.pas</Transaction>
     <Transaction>2023/12/29 13:51:01.000.192,=C:\geiewin\SubProjetos\Curso\Git\ServerMethodsUnit1.pas</Transaction>
-    <Transaction>2023/12/29 13:51:02.000.072,=C:\geiewin\SubProjetos\Curso\Git\js\base64.js</Transaction>
-    <Transaction>2023/12/29 13:51:02.000.217,=C:\geiewin\SubProjetos\Curso\Git\templates\ServerFunctionInvoker.html</Transaction>
-    <Transaction>2023/12/29 13:51:02.000.089,=C:\geiewin\SubProjetos\Curso\Git\js\CallbackFramework.js</Transaction>
-    <Transaction>2023/12/29 13:51:02.000.157,=C:\geiewin\SubProjetos\Curso\Git\js\ServerFunctionInvoker.js</Transaction>
-    <Transaction>2023/12/29 13:51:02.000.077,=C:\geiewin\SubProjetos\Curso\Git\js\ServerFunctionExecutor.js</Transaction>
-    <Transaction>2023/12/29 13:51:02.000.184,=C:\geiewin\SubProjetos\Curso\Git\css\ServerFunctionInvoker.css</Transaction>
-    <Transaction>2023/12/29 13:51:02.000.117,=C:\geiewin\SubProjetos\Curso\Git\js\json2-min.js</Transaction>
-    <Transaction>2023/12/29 13:51:02.000.235,=C:\geiewin\SubProjetos\Curso\Git\images\collapse.png</Transaction>
-    <Transaction>2023/12/29 13:51:02.000.201,=C:\geiewin\SubProjetos\Curso\Git\templates\ReverseString.html</Transaction>
-    <Transaction>2023/12/29 13:51:02.000.171,=C:\geiewin\SubProjetos\Curso\Git\css\main.css</Transaction>
-    <Transaction>2023/12/29 13:51:02.000.252,=C:\geiewin\SubProjetos\Curso\Git\images\expand.png</Transaction>
+    <Transaction>2023/12/29 13:51:01.000.463,=C:\geiewin\SubProjetos\Curso\Git\WebModuleUnit1.pas</Transaction>
     <Transaction>2023/12/29 13:51:02.000.126,=C:\geiewin\SubProjetos\Curso\Git\js\ServerFunctionExecutor-min.js</Transaction>
+    <Transaction>2023/12/29 13:51:02.000.117,=C:\geiewin\SubProjetos\Curso\Git\js\json2-min.js</Transaction>
+    <Transaction>2023/12/29 13:51:02.000.201,=C:\geiewin\SubProjetos\Curso\Git\templates\ReverseString.html</Transaction>
+    <Transaction>2023/12/29 13:51:02.000.089,=C:\geiewin\SubProjetos\Curso\Git\js\CallbackFramework.js</Transaction>
+    <Transaction>2023/12/29 13:51:02.000.217,=C:\geiewin\SubProjetos\Curso\Git\templates\ServerFunctionInvoker.html</Transaction>
+    <Transaction>2023/12/29 13:51:02.000.184,=C:\geiewin\SubProjetos\Curso\Git\css\ServerFunctionInvoker.css</Transaction>
+    <Transaction>2023/12/29 13:51:02.000.077,=C:\geiewin\SubProjetos\Curso\Git\js\ServerFunctionExecutor.js</Transaction>
+    <Transaction>2023/12/29 13:51:02.000.171,=C:\geiewin\SubProjetos\Curso\Git\css\main.css</Transaction>
     <Transaction>2023/12/29 13:51:02.000.082,=C:\geiewin\SubProjetos\Curso\Git\js\json2.js</Transaction>
-    <Transaction>2023/12/29 13:51:02.000.107,=C:\geiewin\SubProjetos\Curso\Git\js\base64-min.js</Transaction>
+    <Transaction>2023/12/29 13:51:02.000.157,=C:\geiewin\SubProjetos\Curso\Git\js\ServerFunctionInvoker.js</Transaction>
     <Transaction>2023/12/29 13:51:02.000.099,=C:\geiewin\SubProjetos\Curso\Git\js\ServerFunctions.js</Transaction>
     <Transaction>2023/12/29 13:51:02.000.135,=C:\geiewin\SubProjetos\Curso\Git\js\CallbackFramework-min.js</Transaction>
     <Transaction>2023/12/29 13:51:02.000.145,=C:\geiewin\SubProjetos\Curso\Git\js\connection.js</Transaction>
-    <Transaction>2023/12/29 13:54:52.000.457,C:\geiewin\SubProjetos\Curso\Git\view\frmPrincipal.pas=C:\geiewin\SubProjetos\Curso\Git\FormUnit1.pas</Transaction>
+    <Transaction>2023/12/29 13:51:02.000.107,=C:\geiewin\SubProjetos\Curso\Git\js\base64-min.js</Transaction>
+    <Transaction>2023/12/29 13:51:02.000.252,=C:\geiewin\SubProjetos\Curso\Git\images\expand.png</Transaction>
+    <Transaction>2023/12/29 13:51:02.000.235,=C:\geiewin\SubProjetos\Curso\Git\images\collapse.png</Transaction>
+    <Transaction>2023/12/29 13:51:02.000.072,=C:\geiewin\SubProjetos\Curso\Git\js\base64.js</Transaction>
     <Transaction>2023/12/29 13:54:52.000.457,C:\geiewin\SubProjetos\Curso\Git\view\frmPrincipal.dfm=C:\geiewin\SubProjetos\Curso\Git\FormUnit1.dfm</Transaction>
+    <Transaction>2023/12/29 13:54:52.000.457,C:\geiewin\SubProjetos\Curso\Git\view\frmPrincipal.pas=C:\geiewin\SubProjetos\Curso\Git\FormUnit1.pas</Transaction>
     <Transaction>2023/12/29 13:55:10.000.360,C:\geiewin\SubProjetos\Curso\Git\model\WebModule.pas=C:\geiewin\SubProjetos\Curso\Git\WebModuleUnit1.pas</Transaction>
     <Transaction>2023/12/29 13:55:10.000.360,C:\geiewin\SubProjetos\Curso\Git\model\WebModule.dfm=C:\geiewin\SubProjetos\Curso\Git\WebModuleUnit1.dfm</Transaction>
     <Transaction>2023/12/29 13:55:23.000.129,C:\geiewin\SubProjetos\Curso\Git\controller\uServerMethods.pas=C:\geiewin\SubProjetos\Curso\Git\ServerMethodsUnit1.pas</Transaction>
@@ -56,5 +56,11 @@
     <Transaction>2023/12/29 22:42:43.000.683,C:\geiewin\SubProjetos\Curso\Git\ServerDatasnapDelphi\Server.dproj=C:\geiewin\SubProjetos\Curso\Git\ServerDatasnapDelphi\ServerDataSnap.dproj</Transaction>
     <Transaction>2024/01/03 15:19:54.000.674,C:\geiewin\SubProjetos\Curso\Git\ServerDatasnapDelphi\ServerDataSnapDelphi.dproj=C:\geiewin\SubProjetos\Curso\Git\ServerDatasnapDelphi\ServerDataSnap.dproj</Transaction>
     <Transaction>2024/01/04 15:42:37.000.996,C:\geiewin\SubProjetos\Curso\Git\BaseServerDataSnapDelphi\BaseServerDataSnapDelphi.dproj=C:\geiewin\SubProjetos\Curso\Git\BaseServerDataSnapDelphi\ServerDataSnapDelphi.dproj</Transaction>
+    <Transaction>2024/01/08 16:20:37.000.696,=C:\geiewin\SubProjetos\Curso\Git\BaseServerDataSnapDelphi\Unit1.pas</Transaction>
+    <Transaction>2024/01/08 16:20:45.000.308,C:\geiewin\SubProjetos\Curso\Git\BaseServerDataSnapDelphi\Unit1.pas=C:\geiewin\SubProjetos\Curso\Git\BaseServerDataSnapDelphi\dao\uClienteDao.pas</Transaction>
+    <Transaction>2024/01/08 16:21:10.000.552,=C:\geiewin\SubProjetos\Curso\Git\BaseServerDataSnapDelphi\Unit1.pas</Transaction>
+    <Transaction>2024/01/08 16:21:18.000.458,C:\geiewin\SubProjetos\Curso\Git\BaseServerDataSnapDelphi\Unit1.pas=C:\geiewin\SubProjetos\Curso\Git\BaseServerDataSnapDelphi\model\uClienteModel.pas</Transaction>
+    <Transaction>2024/01/08 16:21:52.000.641,=C:\geiewin\SubProjetos\Curso\Git\BaseServerDataSnapDelphi\Unit1.pas</Transaction>
+    <Transaction>2024/01/08 16:22:02.000.624,C:\geiewin\SubProjetos\Curso\Git\BaseServerDataSnapDelphi\Unit1.pas=C:\geiewin\SubProjetos\Curso\Git\BaseServerDataSnapDelphi\controller\uClienteControl.pas</Transaction>
   </Transactions>
 </BorlandProject>

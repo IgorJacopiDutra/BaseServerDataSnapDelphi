@@ -19,7 +19,10 @@ uses
   uSystem.JSONUtil in 'model\uSystem.JSONUtil.pas',
   uFileControl in 'controller\uFileControl.pas',
   uFileModel in 'model\uFileModel.pas',
-  uFileDao in 'dao\uFileDao.pas';
+  uFileDao in 'dao\uFileDao.pas',
+  uClienteDao in 'dao\uClienteDao.pas',
+  uClienteModel in 'model\uClienteModel.pas',
+  uClienteControl in 'controller\uClienteControl.pas';
 
 {$R *.res}
 

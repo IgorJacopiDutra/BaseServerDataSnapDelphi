@@ -21,6 +21,7 @@ type
       DSProxyGenerator1: TDSProxyGenerator;
       DSServerMetaDataProvider1: TDSServerMetaDataProvider;
       DSSCUser: TDSServerClass;
+      DSSCCliente: TDSServerClass;
       procedure DSServerClass1GetClass(DSServerClass: TDSServerClass; var PersistentClass: TPersistentClass);
       procedure DSAuthenticationManager1UserAuthorize(Sender: TObject; EventObject: TDSAuthorizeEventObject; var valid: Boolean);
       procedure DSAuthenticationManager1UserAuthenticate(Sender: TObject; const Protocol, Context, User, Password: string; var valid: Boolean; UserRoles: TStrings);
@@ -30,6 +31,7 @@ type
       procedure WebFileDispatcher1BeforeDispatch(Sender: TObject; const AFileName: string; Request: TWebRequest; Response: TWebResponse; var Handled: Boolean);
       procedure WebModuleCreate(Sender: TObject);
       procedure DSSCUserGetClass(DSServerClass: TDSServerClass; var PersistentClass: TPersistentClass);
+      procedure DSSCClienteGetClass(DSServerClass: TDSServerClass; var PersistentClass: TPersistentClass);
    private
     { Private declarations }
       FServerFunctionInvokerAction: TWebActionItem;
@@ -47,11 +49,16 @@ implementation
 {$R *.dfm}
 
 uses
-   uServerMethods, Web.WebReq, uUserControl;
+   uServerMethods, Web.WebReq, uUserControl, uClienteControl;
 
 const
    userServer = 'ADMIN';
    passServer = '123456';
+
+procedure TWebModule1.DSSCClienteGetClass(DSServerClass: TDSServerClass; var PersistentClass: TPersistentClass);
+begin
+   PersistentClass := uClienteControl.TClienteControl;
+end;
 
 procedure TWebModule1.DSSCUserGetClass(DSServerClass: TDSServerClass; var PersistentClass: TPersistentClass);
 begin
